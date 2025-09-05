@@ -6,100 +6,94 @@ import { Link } from "react-router-dom";
 
 
 // Corrected image imports with proper extensions
-import bedSheets from "../essentialimages/Rbandp.avif";
-import mosquitoNet from "../essentialimages/Rnet.avif";
 
 
 import locker from "../essentialimages/Rlocker.avif";
-import utensils from "../essentialimages/Rutensils.avif";
-import bottles from "../essentialimages/Rbottles.avif";
-
-
 import towels from "../essentialimages/Rtowels.avif";
 import personalCare from "../essentialimages/Rpersonalcare.avif";
 import brush from "../essentialimages/Rbrush.avif";
 import cleaning from "../essentialimages/Rcleaning.avif";
-import bucket from "../essentialimages/Rbucket.avif"
+import bucket from "../essentialimages/Rbucket.avif";
 
-
-
-
-
-
-
-
+import rbedsheet from "../essentialimages/wmattress.jpg";
+import rpillow from "../essentialimages/wpillow.jpg";
+import rpepsodant from "../clothsimages/wpepsodant.jpg";
+import rcloseup from "../clothsimages/wcloseup.jpg";
+import rlifeboy from "../clothsimages/wlifeboy.jpg";
+import rsos from "../clothsimages/wsos.jpg";
+import rsurf from "../clothsimages/wsurf.jpg";
+import rvim from "../clothsimages/wvim.jpg";
 
 export const products = [
   {
-    id: "bed-sheets-pillows",
-    title: "Bed Sheets & Pillows",
-    description:
-      "Comfortable bed sheets, mattresses, soft pillows, and pillow covers for a good night's sleep.",
-    image: bedSheets,
+    id: "pepsodant",
+    title: "Pepsodent",
+    description: "Pepsodent toothpaste for healthy and clean teeth.",
+    image: rpepsodant,
   },
   {
-    id: "blankets-mosquito-nets",
-    title: "Blankets & Mosquito Nets",
-    description:
-      "Warm blankets, cozy quilts, and protective mosquito nets for a healthy rest.",
-    image: mosquitoNet,
+    id: "lifeboy-soap",
+    title: "Lifeboy Soap",
+    description: "Lifeboy soap for daily hygiene and fresh skin.",
+    image: rlifeboy,
+  },
+  {
+    id: "sos-scrub",
+    title: "SOS Scrub Pads",
+    description: "Durable SOS pads for cleaning utensils effectively.",
+    image: rsos,
+  },
+  {
+    id: "surf-detergent",
+    title: "Surf Detergent",
+    description: "High-quality detergent powder for laundry cleaning.",
+    image: rsurf,
+  },
+  {
+    id: "vim-liquid",
+    title: "Vim",
+    description: "Vim liquid for sparkling clean dishes.",
+    image: rvim,
+  },
+  {
+    id: "closeup",
+    title: "Closeup",
+    description: "Closeup toothpaste for strong and fresh teeth.",
+    image: rcloseup,
+  },
+  {
+    id: "bed-sheets",
+    title: "Bed Sheets",
+    description: "Comfortable bed sheets, mattresses, and covers for a good night's sleep.",
+    image: rbedsheet,
+  },
+  {
+    id: "pillows",
+    title: "Pillows",
+    description: "Comfortable and soft pillows for a good night's sleep.",
+    image: rpillow,
   },
   {
     id: "towels",
     title: "Towels",
-    description:
-      "Soft bath and hand towels, quick-drying and durable for everyday use.",
+    description: "Soft bath and hand towels, quick-drying and durable for everyday use.",
     image: towels,
   },
   {
     id: "trunks-lockers",
     title: "Trunks & Lockers",
-    description:
-      "Secure storage trunks and lockers for students to keep belongings safe.",
+    description: "Secure storage trunks and lockers for students to keep belongings safe.",
     image: locker,
   },
-  {
-    id: "steel-utensils",
-    title: "Steel Utensils",
-    description:
-      "Durable steel plates, bowls, glasses, and spoons — perfect for daily meals.",
-    image: utensils,
-  },
-  {
-    id: "water-bottles-flasks",
-    title: "Water Bottles & Flasks",
-    description:
-      "Stainless steel bottles and insulated flasks to keep drinks hot or cold.",
-    image: bottles,
-  },
-  {
-    id: "personal-care",
-    title: "Personal Care",
-    description:
-      "Bath soap, washing soap, toothpaste, toothbrush, hair oil, and combs.",
-    image: personalCare,
-  },
+
   {
     id: "buckets-mugs",
     title: "Buckets & Mugs",
-    description:
-      "Strong plastic buckets, mugs, and jugs for bathing and storage use.",
+    description: "Strong plastic buckets, mugs, and jugs for bathing and storage use.",
     image: bucket,
   },
-  {
-    id: "cleaning-supplies",
-    title: "Cleaning Supplies",
-    description:
-      "Detergent powder, phenyl, broom, mop — for a clean and fresh environment.",
-    image: cleaning,
-  },
-  {
-    id: "dustbins-brushes",
-    title: "Dustbins & Brushes",
-    description:
-      "Durable dustbins and cleaning brushes to maintain hygiene easily.",
-    image: brush,
-  },
+
+ 
 ];
 
 
@@ -121,7 +115,7 @@ export default function Essentials() {
       <br />
       <div className="min-h-screen bg-white">
         <main className="max-w-screen-xl mx-auto px-0.5 py-4">
-          <h1 className="text-3xl font-bold text-center mb-8">Office Supplies</h1>
+          <h1 className="text-3xl font-bold text-center mb-8">Daily Usable Items</h1>
 
           {/* Product Grid */}
           <div className="grid grid-cols-2 gap-4">

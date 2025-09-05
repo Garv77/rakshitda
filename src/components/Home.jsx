@@ -16,7 +16,7 @@ const categories = [
     link: "/office-supplies",
   },
   {
-    title: "Hostel & Daily Essentials",
+    title: "Daily Usable Items",
     description:
       "Daily essentials for hostel or home use, like towels, water bottles, cleaning supplies, and personal care items.",
     image: Essentials,
