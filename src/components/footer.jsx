@@ -18,7 +18,7 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="" className="hover:underline">
+                  <a href="/aboutus" className="hover:underline">
                     About us
                   </a>
                 </li>
@@ -55,12 +55,12 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <a href="/privacypolicy" className="hover:underline">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <a href="/privacypolicy" className="hover:underline">
                     Terms &amp; Conditions
                   </a>
                 </li>

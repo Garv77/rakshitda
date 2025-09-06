@@ -10,7 +10,10 @@ import OfficeSupplies from './components/DailyUse'
 import Essentials from './components/Essentials';
 import ProductDetail from './components/ProductDetails';
 import ClothingCollection from './components/Clothing';
-
+import Manpower from './components/manpower';
+import ComingSoon from './components/ration';
+import AboutUs from './components/about';
+import PrivacyPolicy from './components/privacy';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,6 +30,10 @@ function App() {
           <Route path="/essentials" element={<Essentials/>}  />
           <Route path="/clothing" element={<ClothingCollection/>}  />
            <Route path="/product/:id" element={<ProductDetail />} />
+           <Route path = "/manpower" element = {<Manpower/>} />
+           <Route path = "/ration" element = {<ComingSoon/>} />
+           <Route path = "/aboutus" element = {<AboutUs/>} />
+           <Route path ="/privacypolicy" element = {<PrivacyPolicy/>} />
           {/* Add more routes here if needed */}
         </Routes>
 

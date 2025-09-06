@@ -2,9 +2,11 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import FramerMotion from "./framer";
 
-import OfficeImage from "../officeimages/Rmainoffice.avif";
-import Formal from "../officeimages/Rmainformal.webp";
-import Essentials from "../officeimages/Rmainessentials.avif";
+import OfficeImage from "../clothsimages/wofficesupplies.jpg";
+import Formal from "../clothsimages/wbacche.jpg";
+import Essentials from "../clothsimages/wdailyusable.jpg";
+import Manpower from "../clothsimages/wmanpower.jpg";
+import Ration from "../clothsimages/Wrationsupplies.jpg"
 
 
 const categories = [
@@ -29,6 +31,18 @@ const categories = [
     image: Formal,
     link: "/clothing",
   },
+  {
+    title : "Manpower Outsourcing" , description : "We help you provide right labours who are able to perform everytype of construction as well as non construction works.",
+    image : Manpower,
+    id : "manpower",
+    link : "/manpower",
+  },
+  {
+    title : "Ration" , description : "All type of daily use ration, including edibals are available. coming soon",
+    image : Ration,
+    id : "ration",
+    link : "/ration",
+  }
 ];
 
 export default function Home() {

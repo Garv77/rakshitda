@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../clothsimages/mainlogo.jpg"; // adjust path as needed
 
 const MobileNav = () => {
   return (
@@ -7,21 +8,22 @@ const MobileNav = () => {
       <nav className="bg-white border-gray-200 dark:bg-gray-900">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
           <a
-            href="https://flowbite.com"
+            href=""
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
            
-            <span className="self-center text-1xl font-semibold whitespace-nowrap dark:text-white">
-              Neem Krori Traders
-            </span>
+            <img src={logo} className="h-10 w-auto" alt="Neem Karoli Logo" />
+  <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+    Neem Karoli Traders
+  </span>
           </a>
           <div className="flex items-center space-x-6 rtl:space-x-reverse">
-            <a
+            {/* <a
               href="tel:7465076529"
               className="text-sm text-gray-500 dark:text-white hover:underline"
             >
               (+91) 7465076529
-            </a>
+            </a> */}
            
           </div>
         </div>

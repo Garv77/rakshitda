@@ -2,9 +2,12 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
-import OfficeProducts from "../officeimages/Rmainoffice.avif";
-import Essentials from "../officeimages/Rmainessentials.avif";
-import Formal from "../officeimages/Rmainformal.webp";
+import OfficeImage from "../clothsimages/wofficesupplies.jpg";
+import Formal from "../clothsimages/wbacche.jpg";
+import Essentials from "../clothsimages/wdailyusable.jpg";
+import Manpower from "../clothsimages/wmanpower.jpg";
+import Ration from "../clothsimages/Wrationsupplies.jpg"
+
 import Baba from "../officeimages/Rmainimage.jpeg";
 
 
@@ -28,7 +31,7 @@ export default function App() {
   
 const slides = [
   {
-    src: OfficeProducts,
+    src: OfficeImage,
     title: "Office Supplies",
     description: "Tons of office supplies in cheapest price possible",
     action: () => navigate("/office-supplies"),
@@ -39,11 +42,24 @@ const slides = [
     description: "All essential products at a single place",
     action: () => navigate("/essentials"),
   },
+
   {
     src: Formal,
     title: "Clothings",
     description: "Raw cloths and ready made cloths.",
     action: () => navigate("/clothing"),
+  },
+    {
+    src:Manpower, 
+    title: "Manpower Outsourcing",
+    description: "All essential labours at a single place.",
+    action: () => navigate("/manpower"),
+  },
+  {
+    src:Ration, 
+    title: "Ration",
+    description: "Coming Soon",
+    action: () => navigate("/ration"),
   },
   {
     src: Baba,

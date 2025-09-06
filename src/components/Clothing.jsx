@@ -2,63 +2,93 @@ import React, { useState , useEffect} from "react";
 import MobileNav from "./MobileNav";
 import { Link } from "react-router-dom";
 // Import images (replace with actual images of items)
-import SuitingCloth from "../clothsimages/Rwhite.jpeg";
-import CheckShirt from "../clothsimages/Rcheckshirt.avif";
-import DupattaFabric from "../clothsimages/Rwhite.jpeg";
-import WhiteSuitCloth from "../clothsimages/Rsuitkapda.jpeg";
-import BlueShirt from "../clothsimages/Rblueshirt.webp"
-import WarmPants from "../clothsimages/Rbluepantshirt.jpeg"
+import DupattaFabric from "../clothsimages/rakwhiteduppata.jpg";
 import BlueDuppata from "../clothsimages/Rblueduppata.jpeg";
+import wblazer from "../clothsimages/wblazer.jpg";
+import wblueduppata from "../clothsimages/wblueduppata.jpg";
+import wbluepant from "../clothsimages/wbluepant.jpg";
+import wboyshoes from "../clothsimages/wboyshoes.jpg";
+import wcheckshirt from "../clothsimages/wcheckshirt.jpg";
+import wgirlshoe from "../clothsimages/wgirsshoe.jpg";
+import whouseshirt from "../clothsimages/whouseshirt.jpg";
+import wnavyskirt from "../clothsimages/wnavyskirt.jpg";
+import wshirtwhite from "../clothsimages/wshirtwhite.jpg";
+import wtracksuit from "../clothsimages/wtracksuit.jpg";
+import wbag from "../clothsimages/wschoolbag.jpg";
 
 export const products = [
   {
-    id: "pant-shirt-white",
-    title: "pant shirt (White)",
+    id: "shirt-white",
+    title: "Shirt (White)",
     description: "High-quality white suiting cloth ideal for formal wear.",
-    price: "₹ 163",
-    image: SuitingCloth,
+    image: wshirtwhite,
   },
   {
     id: "check-shirt",
     title: "Check Shirt",
     description: "Trendy check-pattern shirt suitable for casual and semi-formal occasions.",
-    price: "₹86",
-    image: CheckShirt,
+    image: wcheckshirt,
   },
   {
-    id: "dupatta-fabric",
-    title: "Dupatta Fabric",
+    id: "white-duppata",
+    title: "white duppata",
     description: "Soft dupatta fabric available in multiple shades.",
-    price: "₹52",
     image: DupattaFabric,
   },
-  {
-    id: "blue-shirts",
-    title: "Blue shirts",
-    description: "Blue shirt for formal and casual wear.",
-    price: "₹163",
-    image: BlueShirt,
-  },
-  {
-    id: "blue-pant-shirt",
-    title: "Blue pant shirt",
-    description: "Thick and comfortable blue cotton pants and shirts.",
-    price: "₹165",
-    image: WarmPants,
-  },
-  {
-    id: "white-suit-cloth",
-    title: "White Suit Cloth",
-    description: "Premium white cloth suitable for making suits.",
-    price: "₹93",
-    image: WhiteSuitCloth,
-  },
+  {id : "customizable-bag" , title : "Customizable bags" , description : "Fully Customizable bags , customize according to need." , image : wbag},
   {
     id: "blue-duppata",
     title: "Blue Duppata",
-    description: "Blue duppata for formal and casual wears.",
-    price: "₹93",
+    description: "Blue duppata for formal and casual wear.",
     image: BlueDuppata,
+  },
+  {
+    id: "blue-pant",
+    title: "Blue Pant",
+    description: "Thick and comfortable blue cotton pants.",
+    image: wbluepant,
+  },
+  {
+    id: "house-shirt",
+    title: "House Shirt",
+    description: "Casual house shirt for everyday wear.",
+    image: whouseshirt,
+  },
+  {
+    id: "blazer",
+    title: "Blazer",
+    description: "Stylish blazer for formal occasions.",
+    image: wblazer,
+  },
+  {
+    id: "navy-skirt",
+    title: "Navy Skirt",
+    description: "Comfortable navy skirt for school or casual wear.",
+    image: wnavyskirt,
+  },
+  {
+    id: "tracksuit",
+    title: "Tracksuit",
+    description: "Comfortable tracksuit for sports and daily wear.",
+    image: wtracksuit,
+  },
+  {
+    id: "boy-shoes",
+    title: "Boy Shoes",
+    description: "Durable shoes for boys, suitable for daily use.",
+    image: wboyshoes,
+  },
+  {
+    id: "girl-shoes",
+    title: "Girl Shoes",
+    description: "Comfortable shoes for girls, ideal for school and casual wear.",
+    image: wgirlshoe,
+  },
+  {
+    id: "blue-duppata-variant",
+    title: "Blue Duppata Variant",
+    description: "Another blue duppata option for formal and casual wear.",
+    image: wblueduppata,
   },
 ];
 

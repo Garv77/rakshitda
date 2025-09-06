@@ -2,8 +2,13 @@ import React, { useState , useEffect } from "react";
 import MobileNav from "./MobileNav";
 import { Link } from "react-router-dom";
 // Import images
-import Ra4 from "../officeimages/Ra4.avif";
-import Rpen from "../officeimages/Rpen.avif";
+import Ra4 from "../officeimages/wa4sheet.jpg";
+import Rpengel from "../officeimages/wgelpen.jpg";
+import Rballpen from "../officeimages/wballpen.jpg";
+import Rpencils from "../officeimages/wpencils.jpg";
+import Rgeomatry from "../officeimages/wgeomatry.jpg";
+import Rexamsheets from "../officeimages/wexamination.jpg";
+
 import Rnotebooks from "../officeimages/Rnotebooks.avif";
 import Rstapler from "../officeimages/Rstapler.avif";
 import Rhighliters from "../officeimages/Rhighliters.avif";
@@ -21,11 +26,26 @@ export const products = [
     image: Ra4,
   },
   {
-    id: "pens",
-    title: "Pens",
+    id: "gel-pens",
+    title: "Gel Pens",
     description:
       "Durable and smooth-writing pens designed for long hours of writing. Ideal for students, professionals, and daily office work.",
-    image: Rpen,
+    image: Rpengel,
+  },
+  
+  {
+    id: "ball-pens",
+    title: "Ball Pens",
+    description:
+      "Durable and smooth-writing pens designed for long hours of writing. Ideal for students, professionals, and daily office work.",
+    image: Rballpen,
+  },
+   {
+    id: "pencils",
+    title: "Pencils",
+    description:
+      "Durable and smooth-writing pencils designed for long hours of writing. Ideal for students, professionals, and daily office work.",
+    image: Rpencils,
   },
   {
     id: "notebooks",
@@ -33,6 +53,20 @@ export const products = [
     description:
       "Premium spiral-bound notebooks for organized note-taking and journaling. Sturdy covers and quality paper for a neat writing experience.",
     image: Rnotebooks,
+  },
+  {
+    id: "Geomatry",
+    title: "Geomatry",
+    description:
+      "complete geomatry box , with all eccential items , like scale , D , etc",
+    image: Rgeomatry,
+  },
+  {
+    id: "exam-sheets",
+    title: "Exam Sheets",
+    description:
+      "Premium examsheets  for schools and colleges , ruled ans well as non ruled , with good quality.",
+    image: Rexamsheets,
   },
   {
     id: "stapler",
@@ -69,13 +103,7 @@ export const products = [
       "Rust-resistant, durable paper clips for bundling documents together. Essential stationery item for every office desk.",
     image: Rclips,
   },
-  {
-    id: "scissors",
-    title: "Scissors",
-    description:
-      "Sharp and ergonomic office scissors designed for cutting paper, packaging, and other materials with ease and precision.",
-    image: Rscissor,
-  },
+  
 ];
 
 
@@ -99,7 +127,7 @@ export default function OfficeSupplies() {
       <br />
       <div className="min-h-screen bg-white">
         <main className="max-w-screen-xl mx-auto px-0.5 py-4">
-          <h1 className="text-3xl font-bold text-center mb-8">Office Supplies</h1>
+          <h1 className="text-3xl font-bold text-center mb-8">Stationary</h1>
 
           {/* Product Grid */}
           <div className="grid grid-cols-2 gap-4">
