@@ -96,13 +96,7 @@ export const products = [
       "Long-lasting dry erase markers with vibrant ink that wipes clean easily. Essential for meetings, classrooms, and brainstorming sessions.",
     image: Rmarker,
   },
-  {
-    id: "paper-clips",
-    title: "Paper Clips",
-    description:
-      "Rust-resistant, durable paper clips for bundling documents together. Essential stationery item for every office desk.",
-    image: Rclips,
-  },
+ 
   
 ];
 

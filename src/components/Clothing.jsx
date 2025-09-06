@@ -36,12 +36,7 @@ export const products = [
     image: DupattaFabric,
   },
   {id : "customizable-bag" , title : "Customizable bags" , description : "Fully Customizable bags , customize according to need." , image : wbag},
-  {
-    id: "blue-duppata",
-    title: "Blue Duppata",
-    description: "Blue duppata for formal and casual wear.",
-    image: BlueDuppata,
-  },
+ 
   {
     id: "blue-pant",
     title: "Blue Pant",

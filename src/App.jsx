@@ -14,6 +14,9 @@ import Manpower from './components/manpower';
 import ComingSoon from './components/ration';
 import AboutUs from './components/about';
 import PrivacyPolicy from './components/privacy';
+import WhatsappButton from "./components/whatsappbutton";
+
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -38,6 +41,7 @@ function App() {
         </Routes>
 
         <Footer />
+        <WhatsappButton/>
       </Router>
     </>
   )
